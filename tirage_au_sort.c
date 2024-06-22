@@ -17,6 +17,6 @@ void tirage_au_sort() /*Determiner le joueur qui commencera la partie*/
     else
     {
         printf("\tLe joueur 1 est: %s",Nom2);
-        printf("\n\tLe joueur 2 est: %s \n\n\n\n",Nom1);
+        printf("\n\tLe joueur 2 est:Â %s \n\n\n\n",Nom1);
     }
 }
