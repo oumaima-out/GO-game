@@ -4,22 +4,22 @@
 #include <stdlib.h>
 #include <windows.h>
 
-typedef struct point /*le type des élts de tableau des points entrés, tab_col_gri, tab_cap*/
+typedef struct point /*le type des Ã©lts de tableau des points entrÃ©s, tab_col_gri, tab_cap*/
 {
-    int lig,lib; /*lig:ligne, lib:liberté*/
+    int lig,lib; /*lig:ligne, lib:libertÃ©*/
     char color,col; /*col:colonne*/
 } pt;
 
 int main()
 {
-    system("color E0"); /*la couleur de l'arrière plan de la console*/
-    int  N=0,B=0,tour; /* N: Les points gagnés noirs, B Les points gagnés blances*/
+    system("color E0"); /*la couleur de l'arriÃ¨re plan de la console*/
+    int  N=0,B=0,tour; /* N: Les points gagnÃ©s noirs, B Les points gagnÃ©s blances*/
     float *ptg1=&N, *ptg2=&B; /*les pointeurs de N et B*/
-    int *pr_tour=&tour; /*pointeur sur le nbre de tour joué*/
+    int *pr_tour=&tour; /*pointeur sur le nbre de tour jouÃ©*/
     int cas,cas1,cas11,cas111,num_tsum;/*cas: choix 1er menu, cas1: choix entre humain ou machine, cas11: choix entre from scratch ou tsumego, cas111:choix enre tsumego facile,moy,diff*/
     char tab_col_gri[10]= {'A','B','C','D','E','F','G','H','I','J'}; /*tableau des colones de la grille*/
-    pt tab_entree[100]; /*le tableau de type pt, contient les pts entrés par le joueur*/
-    pt tab_capture[100]; /*tab des pts capturés*/
+    pt tab_entree[100]; /*le tableau de type pt, contient les pts entrÃ©s par le joueur*/
+    pt tab_capture[100]; /*tab des pts capturÃ©s*/
     int tail_cap=0; /*taille de tab_cap*/
     int *pr_tail_cap=&tail_cap;
     float terrN=0,terrB=0;
@@ -67,7 +67,7 @@ debut:
             boucle:
             while (tour<=99)
             {
-                joueur_joueur(tour,tab_col_gri,tab_entree,ptg1,ptg2,pr_tail_cap,tab_capture,pr_terrN,pr_terrB); /*jouer à tour de role entre les 2 joueurs*/
+                joueur_joueur(tour,tab_col_gri,tab_entree,ptg1,ptg2,pr_tail_cap,tab_capture,pr_terrN,pr_terrB); /*jouer Ã  tour de role entre les 2 joueurs*/
                 tour=tour+1;
             }
             territoire(tab_entree,tab_col_gri,tour,pr_terrN,pr_terrB);
@@ -276,7 +276,7 @@ machine2:
         printf(" De la regle de capture decoule la notion de vie et de mort : des pierres mortes sont des pierres que l'on est sur de \n");
         printf(" sans y perdre par ailleurs, tandis que des pierres vivantes sont des pierres que l'on ne peut plus esperer capturer.");
         printf("\n\n\n   3.Repetition:\n\n");
-        printf(" Un joueur, en posant une pierre, ne doit pas redonner au goban un etat identique à l'un de ceux qu'il lui avait deja\n donne.\n\n\n");
+        printf(" Un joueur, en posant une pierre, ne doit pas redonner au goban un etat identique Ã  l'un de ceux qu'il lui avait deja\n donne.\n\n\n");
         printf("\tVoulez vous jouer?\n\tSi oui tapez 1, sinon tapez 0: ");
         int h;
         scanf("%d",&h);
