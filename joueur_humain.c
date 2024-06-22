@@ -7,7 +7,7 @@ typedef struct point
     int lig,lib;
     char color,col;
 } pt;
-void joueur_humain(int tour,char tab_col_gri[100],pt tab_entree[100],float *ptg1,float *ptg2,int *pr_tail_cap,pt tab_capture[100],int *pr_terrN,int *pr_terrB,int cas11) /*jouer à tour de role entre les 2 joueurs*/
+void joueur_humain(int tour,char tab_col_gri[100],pt tab_entree[100],float *ptg1,float *ptg2,int *pr_tail_cap,pt tab_capture[100],int *pr_terrN,int *pr_terrB,int cas11) /*jouer Ã  tour de role entre les 2 joueurs*/
 {
     int l,i,w,y;
     char c;
