@@ -18,6 +18,6 @@ void tirage_sort_machine(int *pr_a) /*Determiner le joueur qui commencera la par
     {
         *pr_a=1;
         printf("\tLe joueur 1 est: la machine");
-        printf("\n\tLe joueur 2 est: %s \n\n\n\n",Nom1);
+        printf("\n\tLe joueur 2 est:Â %s \n\n\n\n",Nom1);
     }
 }
