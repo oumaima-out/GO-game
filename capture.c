@@ -8,7 +8,7 @@ typedef struct point
     char color,col;
 } pt;
 
-/*cette proc test chaque pt du tab_entree avec les autres pts si c'est un pt à capturer, elle ajoute ds tab_cap*/
+/*cette proc test chaque pt du tab_entree avec les autres pts si c'est un pt Ã  capturer, elle ajoute ds tab_cap*/
 void capture(int tour,pt tab_entree[100],int *ptg1,int *ptg2,pt tab_capture[100],int *pr_tail_cap)
 {
     for (int i=0; i<=tour; i++)
