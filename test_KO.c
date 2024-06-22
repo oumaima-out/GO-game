@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-typedef struct point /*le type des élts de tableau des points entrés*/
+typedef struct point /*le type des Ã©lts de tableau des points entrÃ©s*/
 {
     int lig,lib;
     char color,col;
